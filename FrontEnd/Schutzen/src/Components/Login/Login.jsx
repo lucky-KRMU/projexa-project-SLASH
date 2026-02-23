@@ -12,7 +12,9 @@ const LoginPage = () => {
 
       <div className='relative z-10 w-full max-w-md p-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl'>
       
-      
+      <div className='text-white mb-8'>
+        <p className='text-sm font-light opacity-80'></p>
+      </div>
       
       
       </div>
