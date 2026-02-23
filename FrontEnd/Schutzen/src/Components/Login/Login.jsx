@@ -8,6 +8,14 @@ const LoginPage = () => {
       
       <div className='absolute top-10 left-10 w-32 h-32 bg-blue-400 opacity-20 blur-3xl rounded-full'></div>
 
+      <div className='absolute bottom-10 right-10 w-64 h-64 bg-cyan-500 opacity-10 blur-3xl rounded-full'></div>
+
+      <div className='relative z-10 w-full max-w-md p-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl'>
+      
+      
+      
+      
+      </div>
 
       </div>
 
