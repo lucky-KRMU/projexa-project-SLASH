@@ -22,6 +22,11 @@ const LoginPage = () => {
           <input type="email" placeholder='username@gmail.com'className='w-full px-4 py-2 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition' />
         </div>
 
+         <div>
+          <label className='block mb-1 text-white text-sm ml-1'></label>
+          <input type="passord" placeholder='password'className="w-full px-4 py-2 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
+          
+          </div> 
 
 
       </form>
