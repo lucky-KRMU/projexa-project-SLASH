@@ -45,12 +45,10 @@ const LoginPage = () => {
         Don't have an account? <a href="/signup" className="font-semibold hover:underline">Register for free</a>
       </p>
       </div>
-
       </div>
-
-
     </div>
-  )
-}
+  );
+};
+
 
 export default LoginPage
