@@ -7,7 +7,7 @@ function Header() {
     <header className='h-[8vh] w-full bg-sky-500 stiky top-0'>
     <nav className='h-full w-full flex'>
       <h1 className='h-10em w-full font-bold text-[30px] flex flex-row gap-3 items-center justify-start p-2 uppercase'>
-        <div className=' hover:text-blue-100 pointer-none: cursor-pointer '>
+        <div className=' hover:text-blue-200 pointer-none: cursor-pointer '>
           <NavLink to="/" >Schũtzen</NavLink></div>
       </h1>
       <ul className='h-10em w-full font-bold text-[25px] flex flex-row gap-3 items-center justify-end p-2 '>
