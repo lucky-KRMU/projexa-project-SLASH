@@ -11,7 +11,7 @@ function Header() {
           <NavLink to="/" >Schũtzen</NavLink></div>
       </h1>
       <ul className='h-10em w-full font-bold text-[25px] flex flex-row gap-3 items-center justify-end p-2 '>
-        <li className='hover:text-blue-100'>
+        <li className='hover:text-blue-300'>
           <NavLink to="/" className={({isActive})=>`${isActive ? "text-white" : ""}`}>Home</NavLink>
         </li>
         <li className='hover:text-blue-200'>
