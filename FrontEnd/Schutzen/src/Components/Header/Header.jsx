@@ -4,19 +4,20 @@ import { Link, NavLink } from 'react-router'
 function Header() {
   return (
     <>
-    <header className='h-[15vh] w-full bg-sky-700 stiky top-0'>
-    <nav className='h-full w-full'>
-      <ul className='h-full w-full flex flex-row gap-3 items-center justify-center  '>
-        <li>
+    <header className='h-[7vh] w-full bg-sky-500 stiky top-0'>
+    <nav className='h-full w-full flex'>
+      <h1 className='h-10em w-full font-bold text-[25px] flex flex-row gap-3 items-center justify-start p-2 uppercase '>Schũtzen</h1>
+      <ul className='h-10em w-full font-bold text-[25px] flex flex-row gap-3 items-center justify-end p-2 '>
+        <li className='hover:text-blue-100'>
           <NavLink to="/" className={({isActive})=>`${isActive ? "text-white" : ""}`}>Home</NavLink>
         </li>
-        <li>
+        <li className='hover:text-blue-100'>
           <NavLink to="/user" className={({isActive})=>`${isActive ? "text-white" : ""}`}>User</NavLink>
         </li>
-        <li>
+        <li className='hover:text-blue-100'>
           <NavLink to="/login" className={({isActive})=>`${isActive ? "text-white" : ""}`}>login</NavLink>
         </li>
-        <li>
+        <li className='hover:text-blue-100'>
           <NavLink to="/signup" className={({isActive})=>`${isActive ? "text-white" : ""}`}>signup</NavLink>
         </li>
       </ul>
