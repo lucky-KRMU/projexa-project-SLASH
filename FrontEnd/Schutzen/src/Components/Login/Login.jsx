@@ -1,5 +1,10 @@
 import React from 'react'
-
+import { Github, Chrome, Facebook } from 'lucide-react';
+const SocialButton = ({ icon }) => (
+  <button className="flex-1 flex justify-center items-center py-2 bg-white rounded-md hover:bg-gray-100 transition-colors shadow-sm">
+    <span className="text-gray-700">{icon}</span>
+  </button>
+);
 const LoginPage = () => {
   return (
     <div className='min-h-screen w-full flex items-center justify-center bg-[#87b9ff] p-4'>
@@ -25,12 +30,15 @@ const LoginPage = () => {
          <div>
           <label className='block mb-1 text-white text-sm ml-1'></label>
           <input type="passord" placeholder='password'className="w-full px-4 py-2 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition" />
-          
+          <button type='button' className='block mt-2 text-xs text-blue-200 hover:underline'>Forgot Password?</button>
           </div> 
-
-
       </form>
-      
+      <div className='mt-6'>
+        <p className='text-center text-xs text-blue-100 mb-4 opacity-70'>or continue with</p>
+        <div className='flex justify-between gap-4'>
+          <SocialButton icon={<Chrome size = {20} />}/>
+        </div>
+      </div>
       </div>
 
       </div>
