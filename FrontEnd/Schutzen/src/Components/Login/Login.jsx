@@ -13,9 +13,18 @@ const LoginPage = () => {
       <div className='relative z-10 w-full max-w-md p-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl'>
       
       <div className='text-white mb-8'>
-        <p className='text-sm font-light opacity-80'></p>
+        <p className='text-sm font-light opacity-80 uppercase'>Schũtzen</p>
+        <h1 className='text-4xl font-bold'>Login</h1>
       </div>
-      
+      <form className='space-y-4'>
+        <div>
+          <label className='block mb-1 text-white text-sm ml-1'>Email</label>
+          <input type="email" placeholder='username@gmail.com'className='w-full px-4 py-2 rounded-md bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition' />
+        </div>
+
+
+
+      </form>
       
       </div>
 
