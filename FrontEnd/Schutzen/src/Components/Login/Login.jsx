@@ -36,9 +36,14 @@ const LoginPage = () => {
       <div className='mt-6'>
         <p className='text-center text-xs text-blue-100 mb-4 opacity-70'>or continue with</p>
         <div className='flex justify-between gap-4'>
-          <SocialButton icon={<Chrome size = {20} />}/>
+          <SocialButton icon={<Chrome size={20} />} />
+              <SocialButton icon={<Github size={20} />} />
+              <SocialButton icon={<Facebook size={20} />} />
         </div>
       </div>
+      <p className='mt-8 text-center text-sm text-white opacity-80'>
+        Don't have an account? <a href="/signup" className="font-semibold hover:underline">Register for free</a>
+      </p>
       </div>
 
       </div>
