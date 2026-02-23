@@ -20,7 +20,7 @@ function Header() {
         <li className='bg-orange-500 hover:bg-orange-600 text-black margin-[10px] p-2 rounded-[10px] transition-all'>
           <NavLink to="/login" className={({isActive})=>`${isActive ? "text-white" : ""}`}>login</NavLink>
         </li>
-        <li className='bg-amber-400 hover:bg-amber-500 text-amber-950 margin-[10px]  p-2 rounded-[10px]'>
+        <li className='bg-amber-400 text-amber-950 margin-[10px]  p-2 rounded-[10px]'>
           <NavLink to="/signup" className={({isActive})=>`${isActive ? "text-white" : ""}`}>signup</NavLink>
         </li>
       </ul>
