@@ -19,7 +19,13 @@ const SignupPage = () => {
       <button onClick={() => setActiveTab('guard')} className={`flex-1 py-3 text-sm font-semibold rounded-xl transition-all duration-300 ${ activeTab === 'guard' ? 'bg-white text-blue-700 shadow-lg' : 'text-white hover:bg-white/5'}`}>Guard Sign Up</button>
       </div>
 
-      
+      <div className='px-8 pb-10'>
+        <h2 className='text-3xl font-bold text-white text-center mb-2'>Create Account </h2>
+        <p className='text-blue-100 text-center mb-8 text-sm italic'>
+          {activeTab === 'user' ? 'Join the community as a user' : 'Register as a verified security partner' }
+        </p>
+
+      </div>
     </div>
   )
 }
