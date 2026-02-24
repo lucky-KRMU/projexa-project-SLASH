@@ -61,7 +61,13 @@ const SignupPage = () => {
           <button className='w-full bg-white text-blue-700 font-bold py-3 rounded-xl hover:bg-blue-50 transition-colors shadow-lg mt-4'>Sign Up</button>
         </form>
 
-        
+        <div className='flex justify-center gap-4'>
+          <button className='p-3 bg-white/10 border border-white/20
+          rounded-full hover:bg-white/20 transition-all'>
+            <Chrome className="w-5 h-5 text-white" />
+          </button>
+
+        </div>
       </div>
     </div>
   )
