@@ -71,10 +71,10 @@ const SignupPage = () => {
           rounded-full hover:bg-white/20 transition-all'>
               <Chrome className="w-5 h-5 text-white" />
             </button>
-            {/* <button className='p-3 bg-white/10 border border-white/20
+            <button className='p-3 bg-white/10 border border-white/20
           rounded-full hover:bg-white/20 transition-all'>
               <Facebook className="w-5 h-5 text-white" />
-            </button> */}
+            </button>
             <button className='p-3 bg-white/10 border border-white/20
           rounded-full hover:bg-white/20 transition-all'>
               <Twitter className="w-5 h-5 text-white" />
