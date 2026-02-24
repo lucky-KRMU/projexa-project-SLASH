@@ -35,6 +35,18 @@ const SignupPage = () => {
             <input type="email" placeholder='Email Address'
             className='w-full bg-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40'/>
           </div>
+
+          {
+            activeTab === 'guard' && (
+              <div className='relative'>
+                <ShieldCheck className='absolute left-3 top-3 text-white/60 w-5 h-5'></ShieldCheck>
+                <input type="text" placeholder='Guard Badge / License Number'
+                className='w-full bg-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40'/>
+              </div>
+            )
+          }
+
+          <div className='relative'></div>
         </form>
       </div>
     </div>
