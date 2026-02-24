@@ -30,11 +30,11 @@ const SignupPage = () => {
             <input type="text" placeholder='Full Name' className='w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40' />
           </div>
 
-          {/* <div className='relative'>
+          <div className='relative'>
             <Mail className='absolute left-3 top-3 text-white/60 w-5 h-5'></Mail>
             <input type="email" placeholder='Email Address'
             className='w-full bg-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40'/>
-          </div> */}
+          </div>
         </form>
       </div>
     </div>
