@@ -24,7 +24,12 @@ const SignupPage = () => {
         <p className='text-blue-100 text-center mb-8 text-sm italic'>
           {activeTab === 'user' ? 'Join the community as a user' : 'Register as a verified security partner' }
         </p>
-
+        <form className='space-y-4'>
+          <div className='relative'>
+            <User className='absolute left-3 top-3 text-white/60 w-5 h-5'></User>
+            
+          </div>
+        </form>
       </div>
     </div>
   )
