@@ -8,11 +8,7 @@ const SignupPage = () => {
     <div className="min-h-screen bg-[#0052D4] bg-linear-to-br from-[#0052D4] via-[#4361EE] to-[#6e8efb] flex items-center justify-center p-6 relative overflow-hidden">
       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white/10 rounded-full blur-[120px]" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-400/20 rounded-full blur-[120px]" />
-
-      {/* Main Container Box */}
       <div className="relative w-full max-w-2xl bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col md:flex-row">
-
-        {/* Left Side: Visual/Branding (Optional but adds to the look) */}
         <div className="hidden md:flex md:w-1/3 bg-linear-to-b from-white/10 to-transparent p-8 flex-col justify-between border-r border-white/10">
           <div>
             <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-6">
