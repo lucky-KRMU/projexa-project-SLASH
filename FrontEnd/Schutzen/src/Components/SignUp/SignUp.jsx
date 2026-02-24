@@ -50,6 +50,14 @@ const SignupPage = () => {
             <input type="tel" placeholder='Phone Number'
             className='w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40'/>
           </div>
+          <div className='relative'>
+            <Lock className='absolute left-3 top-3 text-white/60 w-5 h-5'></Lock>
+            <input 
+                type="password" 
+                placeholder="Set password" 
+                className="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40"
+              />
+          </div>
         </form>
       </div>
     </div>
