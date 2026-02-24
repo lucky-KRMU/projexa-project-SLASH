@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, MapPin, Phone, ShieldCheck, Chrome, Github, Facebook, Twitter, ArrowRight } from 'lucide-react';
+import { Mail, Lock, User, MapPin, Phone, ShieldCheck, Chrome, Facebook, Twitter, ArrowRight } from 'lucide-react';
 
 const SignupPage = () => {
   const [activeTab, setActiveTab] = useState('user');
