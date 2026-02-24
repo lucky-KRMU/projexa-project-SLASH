@@ -12,6 +12,13 @@ const SignupPage = () => {
 
       <div className='relative w-full man-w-lg bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden'></div>
 
+      <div className='flex p-2 bg-black/20 m-6 rounded-2xl'>
+
+      <button onClick={() => setActiveTab('user')} className={`flex-1 py-3 text-sm font-semibold rounded-xl transition-all duration-300 ${ activeTab === 'user' ? 'bg-white text-blue-700 shadow-lg' : 'text-white hover:bg-white/5</div>'}`}>User Sign Up</button>
+      
+      <button onClick={() => setActiveTab('guard')} className={`flex-1 py-3 text-sm font-semibold rounded-xl transition-all duration-300 ${ activeTab === 'guard' ? 'bg-white text-blue-700 shadow-lg' : 'text-white hover:bg-white/5'}`}>Guard Sign Up</button>
+      </div>
+
       
     </div>
   )
