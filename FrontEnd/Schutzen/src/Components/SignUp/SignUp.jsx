@@ -58,7 +58,10 @@ const SignupPage = () => {
                 className="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-10 pr-4 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/40"
               />
           </div>
+          <button className='w-full bg-white text-blue-700 font-bold py-3 rounded-xl hover:bg-blue-50 transition-colors shadow-lg mt-4'>Sign Up</button>
         </form>
+
+        
       </div>
     </div>
   )
