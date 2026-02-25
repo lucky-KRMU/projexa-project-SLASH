@@ -25,6 +25,8 @@ const NotFound = () => {
         <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'>4</span>
           <div className='relative'>
             <span className='text-blue-400 opacity-80'style={{ WebkitTextStroke: '2px #60a5fa' }}>0</span>
+            <div className='absolute inset-0 bg-[#0a0f1b] w-4 h-full left-1/2 -translate-x-1/2 rotate-12'></div>
+          <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'></span>
           </div>
         </motion.div>
     </div>
