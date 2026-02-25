@@ -17,19 +17,23 @@ const NotFound = () => {
             </div>
           ))}
     </div>
-    <div className='relative z-10'>
-        <motion.div 
-        inital={{ opacity: 0 , y: 20}}
-        animate ={{ opacity: 1 , y: 0}}
-        className = "text-[140px] md:text-[220px] font-black leading-none flex items-center justify-center"> 
-        <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'>4</span>
-          <div className='relative'>
-            <span className='text-blue-400 opacity-80'style={{ WebkitTextStroke: '2px #60a5fa' }}>0</span>
-            <div className='absolute inset-0 bg-[#0a0f1b] w-4 h-full left-1/2 -translate-x-1/2 rotate-12'></div>
-          <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'></span>
-          </div>
-        </motion.div>
-    </div>
+    <div className="relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-[140px] md:text-[220px] font-black leading-none flex items-center justify-center"
+          >
+            <span className="text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">4</span>
+            <div className="relative">
+               <span className="text-blue-400 opacity-80" style={{ WebkitTextStroke: '2px #60a5fa' }}>0</span>
+               <div className="absolute inset-0 bg-[#0a0f1b] w-4 h-full left-1/2 -translate-x-1/2 rotate-12" />
+            </div>
+            <span className="text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">4</span>
+          </motion.div>
+          {/* <h2 className="text-center text-xl md:text-2xl font-bold tracking-[0.5em] mt-5 uppercase text-white">
+            Page Not Found
+          </h2> */}
+        </div>
     </div>
     
     </div>
