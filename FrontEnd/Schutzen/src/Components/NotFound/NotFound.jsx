@@ -116,7 +116,7 @@ const NotFound = () => {
             <Shield className="w-4 h-4 text-blue-400" />
           </div>
           <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-100 cursor-pointer">
-            {/* <button><a href="/" className='text-white font-bold text-2xl'>Return Home</a></button> */}
+            <button><a href="/" className='text-white font-bold text-2xl'>Return Home</a></button>
           </span>
         </motion.button>
       </div>
