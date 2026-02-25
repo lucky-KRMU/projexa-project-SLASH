@@ -9,6 +9,7 @@ import Login from './Components/Login/Login.jsx'
 import SignUp from './Components/SignUp/SignUp.jsx'
 import UserAcc from './Components/UserAcc/UserAcc.jsx'
 import Find from './Components/Find/Find.jsx'
+import NotFound from './Components/NotFound/NotFound.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "find",
         element: <Find />
+      },
+      {
+        path: "*",
+        element: <NotFound />
       }
     ]
   }
