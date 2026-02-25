@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
@@ -106,19 +107,20 @@ const NotFound = () => {
             Please return to<br />a secure location.
           </p>
         </div>
-            <br />
-        <motion.button
-          whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(59,130,246,0.3)" }}
-          whileTap={{ scale: 0.95 }}
-          className="absolute bottom-8 flex items-center gap-3 px-8 py-3 rounded-full border border-blue-400/30 bg-blue-900/10 backdrop-blur-md group transition-all"
-        >
-          <div className="p-1 border border-blue-400/50 rounded-md">
-            <Shield className="w-4 h-4 text-blue-400" />
-          </div>
-          <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-100 cursor-pointer">
-            <button><a href="/" className='text-white font-bold text-2xl'>Return Home</a></button>
-          </span>
-        </motion.button>
+           <Link to="/" className="absolute bottom-8 z-30"> 
+  <motion.div
+    whileHover={{ scale: 1.05, backgroundColor: "rgba(30, 58, 138, 0.3)" }}
+    whileTap={{ scale: 0.95 }}
+    className="flex items-center gap-3 px-8 py-3 rounded-full border border-blue-400/30 bg-blue-900/10 backdrop-blur-md cursor-pointer transition-all"
+  >
+    <div className="p-1 border border-blue-400/50 rounded-md">
+      <Shield className="w-4 h-4 text-blue-400" />
+    </div>
+    <span className="text-xs font-bold tracking-[0.3em] uppercase text-blue-100">
+      Return Home
+    </span>
+  </motion.div>
+</Link>
       </div>
     </div>
   );
