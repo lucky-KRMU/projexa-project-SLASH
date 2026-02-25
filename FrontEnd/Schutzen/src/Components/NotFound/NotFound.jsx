@@ -34,6 +34,14 @@ const NotFound = () => {
             Page Not Found
           </h2>
         </div>
+          <div className='relative mt-8 z-20 '>
+          <div className='relative w-24 h-32 md:w-32 md:h-40 bg-slate-800 rounded-t-3xl border-x-4 border-t-4 border-slate-900 shadow-2xl'>
+            <div className=''></div>
+          </div>
+            
+          </div>
+
+
     </div>
     
     </div>
