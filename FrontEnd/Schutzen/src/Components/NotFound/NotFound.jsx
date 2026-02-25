@@ -1,11 +1,8 @@
 import React from 'react';
+import { motion } from "framer-motion";
+import { Shield } from "lucide-react";
 
-function NotFound() {
-  return (
-    <>
-      this is 404 not found
-    </>
-  );
-}
+
+
 
 export default NotFound;
