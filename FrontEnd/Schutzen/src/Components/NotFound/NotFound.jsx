@@ -30,9 +30,9 @@ const NotFound = () => {
             </div>
             <span className="text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]">4</span>
           </motion.div>
-          {/* <h2 className="text-center text-xl md:text-2xl font-bold tracking-[0.5em] mt-5 uppercase text-white">
+          <h2 className="text-center text-xl md:text-2xl font-bold tracking-[0.5em] mt-5 uppercase text-white">
             Page Not Found
-          </h2> */}
+          </h2>
         </div>
     </div>
     
