@@ -47,10 +47,23 @@ const NotFound = () => {
             <div className="absolute -right-2 top-20 w-8 h-4 bg-slate-600 rounded-full rotate-[-15deg] border-2 border-slate-900" />
             </div>
           </div>
-          
+          <div className='absolute bottom-20 w-full px-10 md:px-20 flex justify-between items-end text-[10px] md:text-[12px] font-mono tracking-tighter text-blue-300/40 uppercase'>
+          <p className='max-w-45'>
+            Unauthorized access detected<br />or data corruption.<br />Our guard dogs are on it.
+          </p>
+          <p className='text-right max-w-45'>
+             Please return to<br />a secure location.
+          </p>
+          </div>
+          <motion.button
+          whileHover={{ scale: 1.05, backgroundColor: 'rgba(30, 58, 138, 0.4)' }}
+          whileTap={{ scale: 0.95 }}
+          className="absolute bottom-8 px-6 py-2 border border-blue-400/30 rounded-full flex items-center gap-2 bg-blue-950/20 backdrop-blur-sm group"
+        >
+          <Shield className='w-4 h-4 text-blue-400' />
+          <span className='text-xs font-bold tracking-[0.2em] uppercase'>Return Home</span>
+        </motion.button>
         </div>
-
-
       </div>
 
     </div>
