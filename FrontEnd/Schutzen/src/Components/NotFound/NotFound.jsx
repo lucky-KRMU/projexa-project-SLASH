@@ -23,7 +23,9 @@ const NotFound = () => {
         animate ={{ opacity: 1 , y: 0}}
         className = "text-[140px] md:text-[220px] font-black leading-none flex items-center justify-center"> 
         <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'>4</span>
-
+          <div className='relative'>
+            <span className='text-blue-400 opacity-80'style={{ WebkitTextStroke: '2px #60a5fa' }}>0</span>
+          </div>
         </motion.div>
     </div>
     </div>
