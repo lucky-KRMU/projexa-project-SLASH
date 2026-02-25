@@ -17,7 +17,15 @@ const NotFound = () => {
             </div>
           ))}
     </div>
-    
+    <div className='relative z-10'>
+        <motion.div 
+        inital={{ opacity: 0 , y: 20}}
+        animate ={{ opacity: 1 , y: 0}}
+        className = "text-[140px] md:text-[220px] font-black leading-none flex items-center justify-center"> 
+        {/* <span className='text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]'>4</span> */}
+
+        </motion.div>
+    </div>
     </div>
     
     </div>
