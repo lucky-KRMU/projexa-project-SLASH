@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-[#0a0f1b] text-white flex items-center justify-center p-4 font-sans overflow-hidden">
+    <div className=" min-h-screen bg-[#0a0f1b] text-white flex items-center justify-center p-4 font-sans overflow-hidden">
       
 
       <div className="relative w-full max-w-4xl aspect-square md:aspect-video border border-white/10 rounded-[40px] flex flex-col items-center justify-center bg-linear-to-b from-white/3to-transparent shadow-2xl">
