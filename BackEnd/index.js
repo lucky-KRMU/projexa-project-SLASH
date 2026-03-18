@@ -1,10 +1,10 @@
-// import express from "express";
-// import mongoose from "mongoose";
-// import dotenv from "dotenv";
-// import path from "path";
-// import { fileURLToPath } from "url";
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
-// // Routes imports
+// Routes imports
 // import userRoutes from "./routes/userRoutes.js";
 // import guardRoutes from "./routes/guardRoutes.js";
 
