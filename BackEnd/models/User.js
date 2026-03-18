@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
   phoneNumber: { type: String, required: true },
   location: { type: String, required: true },
   priceIdeal: { type: Number, required: true },
-  
+  gigWorkType: { type: String, required: true }
 }, { timestamps: true });
 
 export const User = mongoose.model('User', userSchema);
