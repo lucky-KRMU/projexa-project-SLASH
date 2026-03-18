@@ -4,20 +4,16 @@ import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Routes imports
 import userRoutes from "./routes/userRoutes.js";
 import guardRoutes from "./routes/guardRoutes.js";
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.join(__dirname, '.env') });
 
-// // This forces dotenv to look exactly in /Users/sahilchadha/Downloads/projexa/BackEnd/.env
-// dotenv.config({ path: path.join(__dirname, '.env') });
+const app = express();
+app.use(express.json());
 
-// const app = express();
-// app.use(express.json());
-
-// // --- CRITICAL DEBUGGING ---
 // console.log("------------------------------------------");
 // console.log("Current Directory:", __dirname);
 // console.log("MONGO_URI value:", process.env.MONGO_URI ? "FOUND ✅" : "NOT FOUND ❌");
@@ -29,7 +25,7 @@ import guardRoutes from "./routes/guardRoutes.js";
 //     console.error("⛔ STOP: Your .env file is not being read.");
 //     console.error("1. Make sure the file is named exactly .env (no .txt at the end)");
 //     console.error("2. Make sure it is inside the folder: " + __dirname);
-//     process.exit(1); // Stop the server because it won't work anyway
+//     process.exit(1);
 // }
 
 // mongoose.connect(dbURI)
