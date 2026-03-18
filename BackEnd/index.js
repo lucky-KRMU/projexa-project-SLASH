@@ -14,10 +14,10 @@ dotenv.config({ path: path.join(__dirname, '.env') });
 const app = express();
 app.use(express.json());
 
-// console.log("------------------------------------------");
-// console.log("Current Directory:", __dirname);
-// console.log("MONGO_URI value:", process.env.MONGO_URI ? "FOUND ✅" : "NOT FOUND ❌");
-// console.log("------------------------------------------");
+console.log("------------------------------------------");
+console.log("Current Directory:", __dirname);
+console.log("MONGO_URI value:", process.env.MONGO_URI ? "FOUND ✅" : "NOT FOUND ❌");
+console.log("------------------------------------------");
 
 // const dbURI = process.env.MONGO_URI;
 
