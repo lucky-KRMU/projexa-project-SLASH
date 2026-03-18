@@ -5,8 +5,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 // Routes imports
-// import userRoutes from "./routes/userRoutes.js";
-// import guardRoutes from "./routes/guardRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
+import guardRoutes from "./routes/guardRoutes.js";
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
