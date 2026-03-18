@@ -28,9 +28,9 @@ if (!dbURI) {
     process.exit(1);
 }
 
-// mongoose.connect(dbURI)
-//   .then(() => console.log("✅ MongoDB Connected"))
-//   .catch((err) => console.error("❌ MongoDB connection error:", err));
+mongoose.connect(dbURI)
+  .then(() => console.log("✅ MongoDB Connected"))
+  .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 // app.use('/api/users', userRoutes);
 // app.use('/api/guards', guardRoutes);
