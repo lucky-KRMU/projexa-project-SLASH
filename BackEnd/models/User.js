@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   firstName: { type: String, required: true },
   middleName: { type: String },
   email: { type: String },
+  lastName: { type: String, required: true },
   
 }, { timestamps: true });
 
