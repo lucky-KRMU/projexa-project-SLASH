@@ -19,14 +19,14 @@ console.log("Current Directory:", __dirname);
 console.log("MONGO_URI value:", process.env.MONGO_URI ? "FOUND ✅" : "NOT FOUND ❌");
 console.log("------------------------------------------");
 
-// const dbURI = process.env.MONGO_URI;
+const dbURI = process.env.MONGO_URI;
 
-// if (!dbURI) {
-//     console.error("⛔ STOP: Your .env file is not being read.");
-//     console.error("1. Make sure the file is named exactly .env (no .txt at the end)");
-//     console.error("2. Make sure it is inside the folder: " + __dirname);
-//     process.exit(1);
-// }
+if (!dbURI) {
+    console.error("⛔ STOP: Your .env file is not being read.");
+    console.error("1. Make sure the file is named exactly .env (no .txt at the end)");
+    console.error("2. Make sure it is inside the folder: " + __dirname);
+    process.exit(1);
+}
 
 // mongoose.connect(dbURI)
 //   .then(() => console.log("✅ MongoDB Connected"))
