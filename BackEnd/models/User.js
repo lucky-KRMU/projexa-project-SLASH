@@ -5,7 +5,8 @@ const userSchema = new mongoose.Schema({
   description: { type: String },
   firstName: { type: String, required: true },
   middleName: { type: String },
- 
+  email: { type: String },
+  
 }, { timestamps: true });
 
 export const User = mongoose.model('User', userSchema);
