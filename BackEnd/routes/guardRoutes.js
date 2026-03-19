@@ -17,7 +17,8 @@ router.post('/', async (req, res) => {
     userName: req.body.userName,
     selfDescription: req.body.selfDescription,
     firstName: req.body.firstName,
-   
+    middleName: req.body.middleName,
+    
   });
 
 //   try {
