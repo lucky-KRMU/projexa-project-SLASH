@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// const guardSchema = new mongoose.Schema({
+const guardSchema = new mongoose.Schema({
 //   userName: { type: String, required: true, unique: true },
 //   selfDescription: { type: String }, // small self description
 //   firstName: { type: String, required: true },
@@ -11,6 +11,6 @@ import mongoose from 'mongoose';
 //   priceIdeal: { type: Number, required: true }, // price ideal (per hour)
 //   gigWork: { type: String, required: true }, // bouncer, etc.
 //   rating: { type: Number, default: 0 } // rating
-// }, { timestamps: true });
+}, { timestamps: true });
 
 // export const Guard = mongoose.model('Guard', guardSchema);
