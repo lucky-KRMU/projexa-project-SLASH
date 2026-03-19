@@ -11,3 +11,18 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+
+router.post('/', async (req, res) => {
+  const guard = new Guard({
+    
+  });
+
+//   try {
+//     const newGuard = await guard.save();
+//     res.status(201).json(newGuard);
+//   } catch (err) {
+//     res.status(400).json({ message: err.message });
+//   }
+// });
+
+// export default router;
