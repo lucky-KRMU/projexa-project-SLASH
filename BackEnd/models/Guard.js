@@ -7,6 +7,7 @@ const guardSchema = new mongoose.Schema({
   middleName: { type: String }, 
   lastName: { type: String, required: true },
   phoneNumber: { type: String, required: true },
+  location: { type: String, required: true },
   
 }, { timestamps: true });
 
