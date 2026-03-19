@@ -13,4 +13,4 @@ const guardSchema = new mongoose.Schema({
   rating: { type: Number, default: 0 }
 }, { timestamps: true });
 
-// export const Guard = mongoose.model('Guard', guardSchema);
+export const Guard = mongoose.model('Guard', guardSchema);
