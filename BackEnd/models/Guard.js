@@ -10,7 +10,7 @@ const guardSchema = new mongoose.Schema({
   location: { type: String, required: true },
   priceIdeal: { type: Number, required: true },
   gigWork: { type: String, required: true },
-
+  rating: { type: Number, default: 0 }
 }, { timestamps: true });
 
 // export const Guard = mongoose.model('Guard', guardSchema);
