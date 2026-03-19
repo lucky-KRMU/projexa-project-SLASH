@@ -18,15 +18,19 @@ router.post('/', async (req, res) => {
     selfDescription: req.body.selfDescription,
     firstName: req.body.firstName,
     middleName: req.body.middleName,
-    
+    // lastName: req.body.lastName,
+    // phoneNumber: req.body.phoneNumber,
+    // location: req.body.location,
+    // priceIdeal: req.body.priceIdeal,
+    // gigWork: req.body.gigWork,
+    // rating: req.body.rating
   });
-
 //   try {
 //     const newGuard = await guard.save();
 //     res.status(201).json(newGuard);
 //   } catch (err) {
 //     res.status(400).json({ message: err.message });
 //   }
-// });
+});
 
 // export default router;
