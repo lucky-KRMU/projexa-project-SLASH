@@ -16,6 +16,7 @@ router.post('/', async (req, res) => {
   const guard = new Guard({
     userName: req.body.userName,
     selfDescription: req.body.selfDescription,
+    firstName: req.body.firstName,
    
   });
 
