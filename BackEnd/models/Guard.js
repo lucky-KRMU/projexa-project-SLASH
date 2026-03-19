@@ -9,7 +9,8 @@ const guardSchema = new mongoose.Schema({
   phoneNumber: { type: String, required: true },
   location: { type: String, required: true },
   priceIdeal: { type: Number, required: true },
-  
+  gigWork: { type: String, required: true },
+
 }, { timestamps: true });
 
 // export const Guard = mongoose.model('Guard', guardSchema);
