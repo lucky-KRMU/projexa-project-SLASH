@@ -22,7 +22,8 @@ router.post('/', async (req, res) => {
     firstName: req.body.firstName,
     middleName: req.body.middleName,
     email: req.body.email,
-    
+    lastName: req.body.lastName,
+   
   });
 
 //   try {
