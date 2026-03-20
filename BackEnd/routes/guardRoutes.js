@@ -27,10 +27,10 @@ router.post('/', async (req, res) => {
   });
   try {
     const newGuard = await guard.save();
-    // res.status(201).json(newGuard);
+    res.status(201).json(newGuard);
   } catch (err) {
-    // res.status(400).json({ message: err.message });
+    res.status(400).json({ message: err.message });
   }
 });
 
-// export default router;
+export default router;
