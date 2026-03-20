@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
     location: req.body.location,
     priceIdeal: req.body.priceIdeal,
     gigWork: req.body.gigWork,
-    
+    rating: req.body.rating
   });
 //   try {
 //     const newGuard = await guard.save();
