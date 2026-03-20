@@ -21,7 +21,8 @@ router.post('/', async (req, res) => {
     lastName: req.body.lastName,
     phoneNumber: req.body.phoneNumber,
     location: req.body.location,
-   
+    priceIdeal: req.body.priceIdeal,
+    
   });
 //   try {
 //     const newGuard = await guard.save();
