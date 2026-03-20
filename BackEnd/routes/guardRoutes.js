@@ -18,12 +18,8 @@ router.post('/', async (req, res) => {
     selfDescription: req.body.selfDescription,
     firstName: req.body.firstName,
     middleName: req.body.middleName,
-    // lastName: req.body.lastName,
-    // phoneNumber: req.body.phoneNumber,
-    // location: req.body.location,
-    // priceIdeal: req.body.priceIdeal,
-    // gigWork: req.body.gigWork,
-    // rating: req.body.rating
+    lastName: req.body.lastName,
+    
   });
 //   try {
 //     const newGuard = await guard.save();
