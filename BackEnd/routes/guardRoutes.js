@@ -25,12 +25,12 @@ router.post('/', async (req, res) => {
     gigWork: req.body.gigWork,
     rating: req.body.rating
   });
-//   try {
-//     const newGuard = await guard.save();
-//     res.status(201).json(newGuard);
-//   } catch (err) {
-//     res.status(400).json({ message: err.message });
-//   }
+  try {
+    const newGuard = await guard.save();
+    // res.status(201).json(newGuard);
+  } catch (err) {
+    // res.status(400).json({ message: err.message });
+  }
 });
 
 // export default router;
