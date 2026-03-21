@@ -29,12 +29,12 @@ router.post('/', async (req, res) => {
     gigWorkType: req.body.gigWorkType
   });
 
-//   try {
-//     const newUser = await user.save();
-//     res.status(201).json(newUser);
-//   } catch (err) {
-//     res.status(400).json({ message: err.message });
-//   }
+  try {
+    const newUser = await user.save();
+    // res.status(201).json(newUser);
+  } catch (err) {
+    // res.status(400).json({ message: err.message });
+  }
 });
 
 export default router;
