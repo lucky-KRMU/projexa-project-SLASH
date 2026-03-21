@@ -24,9 +24,8 @@ router.post('/', async (req, res) => {
     email: req.body.email,
     lastName: req.body.lastName,
     phoneNumber: req.body.phoneNumber,
-    // location: req.body.location,
-    // priceIdeal: req.body.priceIdeal,
-    // gigWorkType: req.body.gigWorkType
+    location: req.body.location,
+   
   });
 
 //   try {
