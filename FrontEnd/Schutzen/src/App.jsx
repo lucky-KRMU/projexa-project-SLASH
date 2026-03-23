@@ -5,7 +5,6 @@ import Home from './pages/Home.jsx';
 import Auth from './pages/Auth.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import FindGuards from './pages/FindGuards.jsx';
-import LoadingPage from './pages/LoadingPage.jsx';
 import NotFound from './pages/NotFound.jsx';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Auth />} />
             <Route path="/signup" element={<Auth />} />
-            <Route path="/loading" element={<LoadingPage />} />
             <Route path="/user" element={<Dashboard />} />
             <Route path="/find" element={<FindGuards />} />
             <Route path="*" element={<NotFound />} />
