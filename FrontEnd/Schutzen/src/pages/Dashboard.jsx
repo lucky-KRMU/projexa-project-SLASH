@@ -6,56 +6,56 @@ const Dashboard = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch('http://localhost:8000/api/users')
-      .then((res) => res.json())
-      .then((data) => {
-        // Taking the first user from your MongoDB array
-        setUser(data[0]); 
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Connection to Schützen API failed:", err);
-        setLoading(false);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://localhost:8000/api/users')
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // Taking the first user from your MongoDB array
+  //       setUser(data[0]); 
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       console.error("Connection to Schützen API failed:", err);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   // --- INLINE LOADING UI ---
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6">
-        <div className="relative mb-8">
-          <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping scale-150"></div>
-          <div className="relative bg-slate-800 p-8 rounded-[2.5rem] border border-slate-700 shadow-2xl">
-            <Shield size={60} className="text-blue-500 animate-pulse" />
-            <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-xl shadow-lg">
-              <Lock size={18} />
-            </div>
-          </div>
-        </div>
-        <h2 className="text-white font-serif text-2xl font-bold tracking-tight mb-2">SCHTUZEN</h2>
-        <p className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em] animate-pulse">
-          Establishing Secure Session...
-        </p>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6">
+  //       <div className="relative mb-8">
+  //         <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping scale-150"></div>
+  //         <div className="relative bg-slate-800 p-8 rounded-[2.5rem] border border-slate-700 shadow-2xl">
+  //           <Shield size={60} className="text-blue-500 animate-pulse" />
+  //           <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-xl shadow-lg">
+  //             <Lock size={18} />
+  //           </div>
+  //         </div>
+  //       </div>
+  //       <h2 className="text-white font-serif text-2xl font-bold tracking-tight mb-2">SCHTUZEN</h2>
+  //       <p className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em] animate-pulse">
+  //         Establishing Secure Session...
+  //       </p>
+  //     </div>
+  //   );
+  // }
 
   // --- ERROR STATE ---
-  if (!user) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="text-center p-12 bg-white rounded-[3rem] border border-slate-200 shadow-xl">
-          <AlertTriangle size={48} className="text-red-500 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-slate-900">User Data Not Found</h3>
-          <p className="text-slate-500 mb-6">We couldn't retrieve your security profile.</p>
-          <button onClick={() => window.location.href='/signup'} className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold">
-            Create Profile
-          </button>
-        </div>
-      </div>
-    );
-  }
+  // if (!user) {
+  //   return (
+  //     <div className="min-h-screen flex items-center justify-center bg-slate-50">
+  //       <div className="text-center p-12 bg-white rounded-[3rem] border border-slate-200 shadow-xl">
+  //         <AlertTriangle size={48} className="text-red-500 mx-auto mb-4" />
+  //         <h3 className="text-xl font-bold text-slate-900">User Data Not Found</h3>
+  //         <p className="text-slate-500 mb-6">We couldn't retrieve your security profile.</p>
+  //         <button onClick={() => window.location.href='/signup'} className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold">
+  //           Create Profile
+  //         </button>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   // --- MAIN DASHBOARD UI ---
   return (
