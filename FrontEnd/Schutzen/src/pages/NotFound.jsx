@@ -8,7 +8,7 @@ const NotFoundPage = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-white font-sans selection:bg-blue-900/40 relative overflow-hidden">
       
-      <header className='h-20 w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-100'>
+      {/* <header className='h-20 w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-100'>
         <nav className='max-w-7xl mx-auto h-full px-6 flex items-center justify-between'>
           <div className='flex items-center gap-2'>
             <Shield className="text-blue-500 w-8 h-8" />
@@ -65,7 +65,7 @@ const NotFoundPage = () => {
             </div>
           </div>
         </div>
-      </main>
+      </main> */}
     </div>
   );
 };
