@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
+  useEffect(() => {
     fetch('http://localhost:8000/api/users')
       .then((res) => res.json())
       .then((data) => {
@@ -18,7 +18,7 @@ const Dashboard = () => {
         console.error("Connection to Schützen API failed:", err);
         setLoading(false);
       });
-  // }, []);
+  }, []);
 
   // --- INLINE LOADING UI ---
   if (loading) {
