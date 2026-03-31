@@ -22,7 +22,7 @@ const NotFoundPage = () => {
         </nav>
       </header> */}
       <main className="max-w-7xl mx-auto px-6 py-20 flex items-center justify-center min-h-[85vh]">
-        {/* <div className="w-full flex flex-col md:flex-row items-center gap-16 relative">
+        <div className="w-full flex flex-col md:flex-row items-center gap-16 relative">
         
           <div className="absolute inset-0 bg-blue-600/10 rounded-full blur-[150px] animate-pulse"></div>
           <div className="relative flex-1">
@@ -64,7 +64,7 @@ const NotFoundPage = () => {
               </button>
             </div>
           </div>
-        </div> */}
+        </div>
       </main>
     </div>
   );
