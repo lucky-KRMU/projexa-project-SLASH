@@ -42,20 +42,20 @@ const Dashboard = () => {
   }
 
   // --- ERROR STATE ---
-  // if (!user) {
-  //   return (
-  //     <div className="min-h-screen flex items-center justify-center bg-slate-50">
-  //       <div className="text-center p-12 bg-white rounded-[3rem] border border-slate-200 shadow-xl">
-  //         <AlertTriangle size={48} className="text-red-500 mx-auto mb-4" />
-  //         <h3 className="text-xl font-bold text-slate-900">User Data Not Found</h3>
-  //         <p className="text-slate-500 mb-6">We couldn't retrieve your security profile.</p>
-  //         <button onClick={() => window.location.href='/signup'} className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold">
-  //           Create Profile
-  //         </button>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-center p-12 bg-white rounded-[3rem] border border-slate-200 shadow-xl">
+          <AlertTriangle size={48} className="text-red-500 mx-auto mb-4" />
+          <h3 className="text-xl font-bold text-slate-900">User Data Not Found</h3>
+          <p className="text-slate-500 mb-6">We couldn't retrieve your security profile.</p>
+          <button onClick={() => window.location.href='/signup'} className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold">
+            Create Profile
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   // --- MAIN DASHBOARD UI ---
   return (
