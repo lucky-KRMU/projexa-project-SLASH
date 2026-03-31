@@ -7,17 +7,17 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
-  //   fetch('http://localhost:8000/api/users')
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // Taking the first user from your MongoDB array
-  //       setUser(data[0]); 
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.error("Connection to Schützen API failed:", err);
-  //       setLoading(false);
-  //     });
+    fetch('http://localhost:8000/api/users')
+      .then((res) => res.json())
+      .then((data) => {
+        // Taking the first user from your MongoDB array
+        setUser(data[0]); 
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Connection to Schützen API failed:", err);
+        setLoading(false);
+      });
   // }, []);
 
   // --- INLINE LOADING UI ---
