@@ -21,25 +21,25 @@ const Dashboard = () => {
   // }, []);
 
   // --- INLINE LOADING UI ---
-  // if (loading) {
-  //   return (
-  //     <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6">
-  //       <div className="relative mb-8">
-  //         <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping scale-150"></div>
-  //         <div className="relative bg-slate-800 p-8 rounded-[2.5rem] border border-slate-700 shadow-2xl">
-  //           <Shield size={60} className="text-blue-500 animate-pulse" />
-  //           <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-xl shadow-lg">
-  //             <Lock size={18} />
-  //           </div>
-  //         </div>
-  //       </div>
-  //       <h2 className="text-white font-serif text-2xl font-bold tracking-tight mb-2">SCHTUZEN</h2>
-  //       <p className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em] animate-pulse">
-  //         Establishing Secure Session...
-  //       </p>
-  //     </div>
-  //   );
-  // }
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6">
+        <div className="relative mb-8">
+          <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-ping scale-150"></div>
+          <div className="relative bg-slate-800 p-8 rounded-[2.5rem] border border-slate-700 shadow-2xl">
+            <Shield size={60} className="text-blue-500 animate-pulse" />
+            <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-xl shadow-lg">
+              <Lock size={18} />
+            </div>
+          </div>
+        </div>
+        <h2 className="text-white font-serif text-2xl font-bold tracking-tight mb-2">SCHTUZEN</h2>
+        <p className="text-blue-400 text-xs font-bold uppercase tracking-[0.3em] animate-pulse">
+          Establishing Secure Session...
+        </p>
+      </div>
+    );
+  }
 
   // --- ERROR STATE ---
   // if (!user) {
