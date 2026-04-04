@@ -5,7 +5,6 @@ const guardSchema = new mongoose.Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   location: { type: String, required: true },
-  priceIdeal: { type: Number, required: true },
   rating: { type: Number, default: 5.0 },
   isAvailable: { type: Boolean, default: true }
 }, { timestamps: true });

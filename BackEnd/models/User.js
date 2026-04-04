@@ -1,15 +1,12 @@
-import mongoose from 'mongoose';
-
 const userSchema = new mongoose.Schema({
   userName: { type: String, required: true, unique: true },
-  firstName: { type: String, required: true },
-  lastName: { type: String, required: true },
-  email: { type: String, required: true },
-  phoneNumber: { type: String },
-  location: { type: String, required: true },
-  priceIdeal: { type: Number, required: true },
-  gigWorkType: { type: String, default: 'Personal Security' },
-  description: { type: String }
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
+  role: { type: String, enum: ['user', 'guard'], default: 'user' }, // CRITICAL FIELD
+  firstName: String,
+  lastName: String,
+  location: String,
+  priceIdeal: Number,
+  rating: { type: Number, default: 5.0 },
+  isAvailable: { type: Boolean, default: true }
 }, { timestamps: true });
-
-export const User = mongoose.model('User', userSchema);

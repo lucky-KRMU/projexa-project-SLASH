@@ -1,56 +1,63 @@
 import React, { useState } from 'react';
-import { Mail, Lock, User, MapPin, DollarSign, Briefcase, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
-    userName: '', email: '', firstName: '', lastName: '', 
-    location: '', priceIdeal: '', gigWorkType: 'Personal Security', description: ''
+    email: '',
+    password: '',
+    role: 'user', // Default to user
+    firstName: '',
+    lastName: '',
+    userName: '',
+    location: ''
   });
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const endpoint = isLogin ? '/api/users/login' : '/api/users';
-    const res = await fetch(`http://localhost:8000${endpoint}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
-    });
-    if (res.ok) window.location.href = '/user';
-  };
-
   return (
-    <div className="min-h-[90vh] flex items-center justify-center p-6">
-      <div className="max-w-4xl w-full bg-white rounded-4xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-slate-200">
-        <div className="md:w-1/3 bg-slate-900 p-10 text-white flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">{isLogin ? "Welcome Back" : "Join Schützen"}</h2>
-          <p className="text-slate-400 text-sm">Elite on-demand security for the modern world.</p>
-        </div>
-        <div className="md:w-2/3 p-10">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input className="w-full bg-slate-50 border p-3 rounded-xl" name="email" placeholder="Email" onChange={handleChange} />
-            {!isLogin && (
-              <div className="grid grid-cols-2 gap-4">
-                <input className="border p-3 rounded-xl" name="firstName" placeholder="First Name" onChange={handleChange} />
-                <input className="border p-3 rounded-xl" name="lastName" placeholder="Last Name" onChange={handleChange} />
-                <input className="border p-3 rounded-xl" name="location" placeholder="Location" onChange={handleChange} />
-                <input className="border p-3 rounded-xl" name="priceIdeal" placeholder="Price/hr" onChange={handleChange} />
-              </div>
-            )}
-            <input className="w-full bg-slate-50 border p-3 rounded-xl" type="password" name="password" placeholder="Password" />
-            <button className="w-full bg-blue-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2">
-              {isLogin ? 'Sign In' : 'Create Account'} <ArrowRight size={18} />
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 p-6">
+      <form onSubmit={handleSubmit} className="max-w-md w-full bg-white p-10 rounded-[2.5rem] shadow-2xl border border-slate-200 space-y-4">
+        <h2 className="text-3xl font-black text-slate-900 text-center mb-8">
+          {isLogin ? "Sector Login" : "Initialize Profile"}
+        </h2>
+
+        {/* ROLE SELECTOR (Only show on Signup) */}
+        {!isLogin && (
+          <div className="flex bg-slate-100 p-1 rounded-2xl mb-6">
+            <button
+              type="button"
+              onClick={() => setFormData({ ...formData, role: 'user' })}
+              className={`flex-1 py-2 rounded-xl text-xs font-bold transition-all ${formData.role === 'user' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-500'}`}
+            >
+              CLIENT
             </button>
-          </form>
-          <button onClick={() => setIsLogin(!isLogin)} className="mt-6 text-blue-600 text-sm font-bold block mx-auto">
-            {isLogin ? "Need an account? Sign up" : "Already have an account? Login"}
-          </button>
-        </div>
-      </div>
+            <button
+              type="button"
+              onClick={() => setFormData({ ...formData, role: 'guard' })}
+              className={`flex-1 py-2 rounded-xl text-xs font-bold transition-all ${formData.role === 'guard' ? 'bg-white shadow-sm text-blue-600' : 'text-slate-500'}`}
+            >
+              GUARD
+            </button>
+          </div>
+        )}
+
+        <input className="w-full bg-slate-50 border p-4 rounded-2xl" name="email" type="email" placeholder="Email" onChange={handleChange} required />
+
+        {!isLogin && (
+          <>
+            <div className="grid grid-cols-2 gap-4">
+              <input className="border p-4 rounded-2xl bg-slate-50" name="firstName" placeholder="First Name" onChange={handleChange} required />
+              <input className="border p-4 rounded-2xl bg-slate-50" name="lastName" placeholder="Last Name" onChange={handleChange} required />
+            </div>
+            <input className="w-full bg-slate-50 border p-4 rounded-2xl" name="location" placeholder="City / Sector" onChange={handleChange} required />
+          </>
+        )}
+
+        <input className="w-full bg-slate-50 border p-4 rounded-2xl" type="password" name="password" placeholder="Password" onChange={handleChange} required />
+
+        <button className="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold shadow-xl shadow-blue-200">
+          {isLogin ? 'Authenticate' : 'Register Agent'}
+        </button>
+      </form>
     </div>
   );
 };
-
-export default Auth;

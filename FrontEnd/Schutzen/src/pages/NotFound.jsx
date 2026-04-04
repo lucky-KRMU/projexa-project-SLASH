@@ -8,19 +8,6 @@ const NotFoundPage = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-white font-sans selection:bg-blue-900/40 relative overflow-hidden">
       
-      {/* <header className='h-20 w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-100'>
-        <nav className='max-w-7xl mx-auto h-full px-6 flex items-center justify-between'>
-          <div className='flex items-center gap-2'>
-            <Shield className="text-blue-500 w-8 h-8" />
-            <h1 className='font-serif font-bold text-2xl tracking-tighter uppercase text-white'>
-              Schtuzen
-            </h1>
-          </div>
-          <div className='flex items-center gap-4 text-slate-300 font-semibold'>
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Page Not Found</span>
-          </div>
-        </nav>
-      </header> */}
       <main className="max-w-7xl mx-auto px-6 py-20 flex items-center justify-center min-h-[85vh]">
         <div className="w-full flex flex-col md:flex-row items-center gap-16 relative">
         
