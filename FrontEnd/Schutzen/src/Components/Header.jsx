@@ -15,16 +15,12 @@ const Header = () => {
   return (
     <header className="h-20 w-full bg-slate-900 border-b border-white/5 sticky top-0 z-100 backdrop-blur-md">
       <nav className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
-        
-        {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
           <div className="bg-blue-600 p-2 rounded-xl group-hover:rotate-12 transition-transform shadow-[0_0_15px_rgba(37,99,235,0.4)]">
             <Shield className="text-white" size={20} />
           </div>
           <span className="font-black text-xl uppercase tracking-tighter text-white">Schtuzen</span>
         </Link>
-
-        {/* Navigation Links */}
         <div className="flex items-center gap-10">
           <Link 
             to="/find" 
