@@ -1,39 +1,24 @@
 import express from 'express';
 import { User } from '../models/User.js';
 
-
 const router = express.Router();
-
 
 router.get('/', async (req, res) => {
   try {
-    const users = await User.find();
-    res.json(users);
+    const users = await User.find().sort({ createdAt: -1 });
+    res.status(200).json(users);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ error: 'Failed to fetch users' });
   }
 });
 
-
 router.post('/', async (req, res) => {
-  const user = new User({
-    userName: req.body.userName,
-    description: req.body.description,
-    firstName: req.body.firstName,
-    middleName: req.body.middleName,
-    email: req.body.email,
-    lastName: req.body.lastName,
-    phoneNumber: req.body.phoneNumber,
-    location: req.body.location,
-    priceIdeal: req.body.priceIdeal,
-    gigWorkType: req.body.gigWorkType
-  });
-
   try {
-    const newUser = await user.save();
+    const newUser = new User(req.body);
+    await newUser.save();
     res.status(201).json(newUser);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({ error: err.message });
   }
 });
 

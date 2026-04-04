@@ -5,31 +5,20 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
   try {
-    const guards = await Guard.find();
-    res.json(guards);
+    const guards = await Guard.find({ isAvailable: true });
+    res.status(200).json(guards);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({ error: 'Failed to fetch guards' });
   }
 });
 
 router.post('/', async (req, res) => {
-  const guard = new Guard({
-    userName: req.body.userName,
-    selfDescription: req.body.selfDescription,
-    firstName: req.body.firstName,
-    middleName: req.body.middleName,
-    lastName: req.body.lastName,
-    phoneNumber: req.body.phoneNumber,
-    location: req.body.location,
-    priceIdeal: req.body.priceIdeal,
-    gigWork: req.body.gigWork,
-    rating: req.body.rating
-  });
   try {
-    const newGuard = await guard.save();
+    const newGuard = new Guard(req.body);
+    await newGuard.save();
     res.status(201).json(newGuard);
   } catch (err) {
-    res.status(400).json({ message: err.message });
+    res.status(400).json({ error: err.message });
   }
 });
 
