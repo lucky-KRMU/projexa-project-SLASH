@@ -1,1 +1,3 @@
 BackEnd/.env
+/dist/
+/node_modules/
