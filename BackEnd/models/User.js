@@ -9,7 +9,6 @@ const userSchema = new mongoose.Schema({
   lastName: { type: String, required: true },
   location: { type: String, required: true },
   priceIdeal: { type: Number, default: 0 },
-  profileImage: { type: String, default: '' },
   gigWorkType: { type: String, default: 'Personal Security' },
   description: { type: String, default: '' },
   rating: { type: Number, default: 5.0 },
